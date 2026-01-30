@@ -1,0 +1,12 @@
+{
+    "users": [
+    { "id": "1", "name": "juan", "email": "user@mail.com", "password": "123" }
+  ],
+  "admins": [
+    { "id": "1", "name": "julio", "email": "admin@mail.com", "password": "123" }
+  ],
+  "vacants": [{
+    "vacantName": "typicode", "vacantSalary": 900, "vacantModality": "hibrid", "vacantDescription": "", "requirements": ["English","Java"], "vacantPost": ""
+  }]
+
+}
