@@ -1,12 +1,15 @@
 {
     "users": [
-    { "id": "1", "name": "juan", "email": "user@mail.com", "password": "123" }
+    { "id": "1", "userName": "juan", "userEmail": "user@mail.com", "userPassword": "123", "userOpenWork": true, "userStatus": "" }
   ],
   "admins": [
-    { "id": "1", "name": "julio", "email": "admin@mail.com", "password": "123" }
+    { "id": "1", "adminName": "julio", "adminEmail": "admin@mail.com", "adminPassword": "123" }
   ],
   "vacants": [{
-    "vacantName": "typicode", "vacantSalary": 900, "vacantModality": "hibrid", "vacantDescription": "", "requirements": ["English","Java"], "vacantPost": ""
-  }]
+    "id": "1", "vacantName": "Desarrollador de python", "vacantSalary": 1700000, "vacantModality": "hibrid", "vacantDescription": "Empresa dedicada a la inspección de redes para el suministro de gases combustibles en los sectores residencial, comercial e industrial; se encuentra en búsqueda de personal bachiller, con o sin experiencia, para desempeñar el cargo de inspector/a aprendiz.", "requirements": ["English","Java"], "vacantPost": ""
+  }],
+  "applies": [{
+    "vacantName": "Desarrollador de python"
+  }] 
 
 }
