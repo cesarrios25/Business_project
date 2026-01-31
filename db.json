@@ -1,0 +1,102 @@
+{
+    "users": [
+    { "id": "1", "name": "juan", "email": "user@mail.com", "password": "123" }
+  ],
+  "admins": [
+    { "id": "1", "name": "julio", "email": "admin@mail.com", "password": "123" }
+  ],
+"vacants": [
+  {
+    "id": "vac1",
+    "vacantName": "Java Developer",
+    "company": "Soft Solutions",
+    "vacantSalary": 900,
+    "location": "Bogotá, Colombia",
+    "vacantDescription": "We are looking for a Java Developer to join our team and support internal software development projects. You will work on maintaining and improving existing applications and collaborate with cross-functional teams.",
+    "requirements": "Looking for a professional with solid knowledge of Java, intermediate English skills, ability to work in a team, and interest in developing high-quality software solutions.",
+    "benefit1": "Flexible working hours",
+    "benefit2": "Professional development opportunities",
+    "benefit3": "Team-building activities",
+    "vacantPost": "Java Developer"
+  },
+  {
+    "id": "vac2",
+    "vacantName": "Frontend Developer",
+    "company": "Soft Solutions",
+    "vacantSalary": 2800,
+    "location": "Medellín, Colombia",
+    "vacantDescription": "We are seeking a frontend developer with experience in modern interfaces, state management, and API consumption.",
+    "requirements": "Strong experience in frontend development, ability to work with modern frameworks, understanding of UI/UX best practices, and collaborative work in an agile team.",
+    "benefit1": "Remote work option",
+    "benefit2": "Health insurance",
+    "benefit3": "Annual performance bonus",
+    "vacantPost": "Frontend Developer"
+  },
+  {
+    "id": "vac3",
+    "vacantName": "Backend Developer",
+    "company": "Soft Solutions",
+    "vacantSalary": 3200,
+    "location": "Bogotá, Colombia",
+    "vacantDescription": "Company focused on enterprise solutions requires a backend developer for API development and maintenance.",
+    "requirements": "Advanced knowledge in API development, database management, experience with agile methodologies, and ability to work on scalable software projects.",
+    "benefit1": "Professional training programs",
+    "benefit2": "Flexible schedule",
+    "benefit3": "Paid time off",
+    "vacantPost": "Backend Developer"
+  },
+  {
+    "id": "vac4",
+    "vacantName": "Full Stack Developer",
+    "company": "Soft Solutions",
+    "vacantSalary": 4000,
+    "location": "Latam",
+    "vacantDescription": "We are looking for a full stack developer to work on international projects with agile methodologies.",
+    "requirements": "Experience in full application development, ability to integrate frontend and backend, knowledge of containers and deployment, and adherence to software development best practices.",
+    "benefit1": "Remote-friendly",
+    "benefit2": "Health & dental insurance",
+    "benefit3": "Annual bonuses",
+    "vacantPost": "Full Stack Developer"
+  },
+  {
+    "id": "vac5",
+    "vacantName": "Junior Web Developer",
+    "company": "Soft Solutions",
+    "vacantSalary": 1500,
+    "location": "Cali, Colombia",
+    "vacantDescription": "Ideal position for students or recent graduates looking to start their career in web development.",
+    "requirements": "Willingness to learn and develop professionally, basic understanding of web development, ability to work in a team, and eagerness to grow in an agile environment.",
+    "benefit1": "Mentorship program",
+    "benefit2": "Flexible hours",
+    "benefit3": "Company events",
+    "vacantPost": "Junior Web Developer"
+  },
+  {
+    "id": "vac6",
+    "vacantName": "QA Tester",
+    "company": "Soft Solutions",
+    "vacantSalary": 2200,
+    "location": "Barranquilla, Colombia",
+    "vacantDescription": "Responsible for ensuring software quality through manual and automated testing.",
+    "requirements": "Ability to design and execute test plans, effectively identify defects, document results, and collaborate with development teams to ensure software quality.",
+    "benefit1": "Training courses",
+    "benefit2": "Remote work days",
+    "benefit3": "Health insurance",
+    "vacantPost": "QA Tester"
+  },
+  {
+    "id": "vac7",
+    "vacantName": "Mobile Developer",
+    "company": "Soft Solutions",
+    "vacantSalary": 3500,
+    "location": "Colombia",
+    "vacantDescription": "Development of cross-platform mobile applications for national and international clients.",
+    "requirements": "Experience in mobile application development, understanding of cross-platform frameworks, adherence to programming best practices, and ability to deliver quality solutions on time.",
+    "benefit1": "Flexible schedule",
+    "benefit2": "Professional development",
+    "benefit3": "Performance bonuses",
+    "vacantPost": "Mobile Developer"
+  }
+]
+}
+
