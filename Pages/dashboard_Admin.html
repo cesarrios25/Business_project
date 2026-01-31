@@ -1,25 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard - Admin</title>
-        <link rel="stylesheet" href="./../CSS/dashboard_Admin.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    </head>
-    <body>
-        <!-- SIDEBAR -->
-         <section></section>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Admin</title>
+    <link rel="stylesheet" href="./../CSS/dashboard_Admin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 px-0">
+          <aside
+            id="sidebar-main"
+            class="sidebar-main sidebar-custom p-3 text-black">
+            <div class="img-sidebar">
+                <img src="./../assets/logo.png" class="img-sidebar" style="width: 18rem;" alt="">
+            </div>
+            <h1>SOFT SOLUTIONS</h1>
+            <div class="row container-buttons_sidebar mt-5 m-auto">
+                <div class="col-md-3 d-flex justify-content-center flex-column">
+                    <button class="btn btn-secondary mb-4">hola</button>
+                    <button class="btn btn-secondary mb-4">hola</button>
+                    <button class="btn btn-secondary mb-4">hola</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center mt-5 m-auto content-close">
+                    <button class="btn btn-danger btn-closeSesion mt-5">Cerrar Sesion</button>
+                </div>
+            </div>
+          </aside>
+        </div>
 
         <!-- NAVBAR AND FILTER -->
+        <div class="col-md-9">
+          <nav
+            id="main-navbar"
+            class="main-navbar navbar navbar-expand-lg px-4"
+          ></nav>
 
-        <!-- USERS AND INFO_USERS -->
-         <section>
-         </section>
-        
+          <!-- USERS AND INFO_USERS -->
+          <section id="main-content" class="mt-4 main-content">
+            <div class="row">
+                <div class="col-md-5 info-user" id="info-user">
+                    <h1>jenkjenrkg</h1>
+                </div>
+                <div class="col-md-7 info-user2">
+                    <h1>ejnvjernvjner</h1>
+                </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
 
-        <script src="./../JS/dashboard_Admin.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    </body>
+    <script src="./../JS/dashboard_Admin.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
