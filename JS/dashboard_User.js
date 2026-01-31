@@ -1,40 +1,43 @@
-import * as Api from "./api.js" 
-// import {sendData, getData  } from "./api.js";
+let API = ("http://localhost:4000");
 
 let vacanteSeleccionada = null;
-
 async function loadVacancies() {
 
 
+    let data = await fetch(`${API}/vacants`);
+    let vacancies = await data.json();
 
-    const vacancies = await Api.getData("vacants")
+
 
     let containerCard = document.querySelector(".vacancies");
     containerCard.innerHTML= "";
-    vacancies.forEach(v => {
+   vacancies.forEach(v => {
 
-        containerCard.innerHTML += 
-        `   <div class="content-card">
-                    <div class="vacante-card">
-                        <h5>${v.vacantName}</h5>
-                        <p class="empresa">${v.company}</p>
-                        <div class="info">
-                            <span>${v.vacantSalary}</span>
-                            <span>${v.location}</span></div>
-                        <button class="btn btn-primary btn-sm mt-3 " onclick="showDescription('${v.id}')">
-                            Descripcion</button>
-                    </div>
+    containerCard.innerHTML += 
+    `   
+    <div class="content-card">
+        <div class="vacante-card">
+            <h5>${v.vacantName}</h5>
+            <p class="empresa">${v.company}</p>
+            <div class="info">
+                <span>${v.vacantSalary}</span>
+                <span>${v.location}</span>
             </div>
-                
-                    `
-                    
-    });
+            <button 
+                class="btn btn-primary btn-sm mt-3 mostrar"
+                data-id="${v.id}">
+                Descripcion
+            </button>
+        </div>
+    </div>
+    `;
+});
 
 }
 
 async function showDescription(id) {
-    const res = await Api.getDataById("vacants",id)
-
+    const res = await fetch(`${API}/vacants/${id}`)
+    const  data = await res.json();
 
     vacanteSeleccionada = data;
 
@@ -83,3 +86,10 @@ async function showDescription(id) {
     }
 
 loadVacancies();
+
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("mostrar")) {
+        const id = e.target.dataset.id;
+        showDescription(id);
+    }
+});

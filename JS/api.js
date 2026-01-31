@@ -1,9 +1,4 @@
-const baseURl = `http://localhost:4000`
-
-const se  =  {
-      "vacantName": "juan ",
-    }
-
+export const baseURl = `http://localhost:4000`
 
 export const getData = async function (endpoint){
     const response = await fetch(`${baseURl}/${endpoint}`)
@@ -11,11 +6,11 @@ export const getData = async function (endpoint){
     return  response.json()
 }
 
-export const getDataById = async function (endpoint, id){
-    const response = await fetch(`${baseURl}/${endpoint}/${id}`)
+// export const getDataById = async function (endpoint, id){
+//     const response = await fetch(`${baseURl}/${endpoint}/${id}`)
     
-    return  response.json()
-}
+//     return  response.json()
+// }
 
 export const sendData = async function (endpoint,data){
     const response = await fetch(`${baseURl}/${endpoint}`,{
