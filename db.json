@@ -17,7 +17,7 @@
     "benefit1": "Flexible working hours",
     "benefit2": "Professional development opportunities",
     "benefit3": "Team-building activities",
-    "vacantPost": "Java Developer"
+    "language": "javascript"
   },
   {
     "id": "vac2",
@@ -30,7 +30,7 @@
     "benefit1": "Remote work option",
     "benefit2": "Health insurance",
     "benefit3": "Annual performance bonus",
-    "vacantPost": "Frontend Developer"
+    "language": "python"
   },
   {
     "id": "vac3",
@@ -43,7 +43,7 @@
     "benefit1": "Professional training programs",
     "benefit2": "Flexible schedule",
     "benefit3": "Paid time off",
-    "vacantPost": "Backend Developer"
+    "language": "javascript"
   },
   {
     "id": "vac4",
@@ -56,7 +56,7 @@
     "benefit1": "Remote-friendly",
     "benefit2": "Health & dental insurance",
     "benefit3": "Annual bonuses",
-    "vacantPost": "Full Stack Developer"
+    "language": "java"
   },
   {
     "id": "vac5",
@@ -69,7 +69,7 @@
     "benefit1": "Mentorship program",
     "benefit2": "Flexible hours",
     "benefit3": "Company events",
-    "vacantPost": "Junior Web Developer"
+    "language": "php"
   },
   {
     "id": "vac6",
@@ -82,7 +82,7 @@
     "benefit1": "Training courses",
     "benefit2": "Remote work days",
     "benefit3": "Health insurance",
-    "vacantPost": "QA Tester"
+    "language": "python"
   },
   {
     "id": "vac7",
@@ -95,7 +95,7 @@
     "benefit1": "Flexible schedule",
     "benefit2": "Professional development",
     "benefit3": "Performance bonuses",
-    "vacantPost": "Mobile Developer"
+    "language": "php"
   }
 ]
 }

@@ -20,7 +20,7 @@ async function loadVacancies() {
                         <h5>${v.vacantName}</h5>
                         <p class="empresa">${v.company}</p>
                         <div class="info">
-                            <span>${v.vacantSalary}</span>
+                            <span>${v.vacantSalary}$</span>
                             <span>${v.location}</span></div>
                         <button class="btn btn-primary btn-sm mt-3 " onclick="showDescription('${v.id}')">
                             Descripcion</button>
@@ -80,6 +80,31 @@ async function showDescription(id) {
         </div>
 
         `
+    };
+
+
+async function filter(language){
+
+    let res = await fetch(`${API}/vacants/?language=${language}`);
+    let data = await res.json();
+
+    try {
+        let = contentFilter = document.querySelector(".vacancies");
+
+        if (data.length === 0) {
+            contentFilter.innerHTML
+            
+        }
+
+        
+    } catch (error) {
+        
     }
 
+
+
+
+
+
+}
 loadVacancies();

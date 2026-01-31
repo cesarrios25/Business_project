@@ -7,10 +7,10 @@
 
 
 
-body { overflow-x: hidden; background-color: #f3f1f1dc; }
+body { overflow-x: hidden; background-color: #3078e6; }
         
 
-
+/* navbar */
 #main-navbar {
     background-color: #ffffff;
     border: 1px solid #b3b1b175;
@@ -20,12 +20,35 @@ body { overflow-x: hidden; background-color: #f3f1f1dc; }
     margin-left: 20px;
     margin-right: 26px;
     border-radius: 12px;
+    justify-content: space-between;
 
 }
 
+.btn-filter {
+    background-color: #3078e6; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    
+    ;
+}
+
+.btn-filter:hover {
+    background-color: #1b61ca; 
+    transform: translateY(-2px); 
+}
+
+/* asidebar */
+
+
 #sidebar-main{
     border: 1px solid #b3b1b175;
-    box-shadow: 0px 6px 16px #b6b6b65d;
+    box-shadow: 4px 8px 16px #b6b6b65d;
     border-radius: 12px;
     margin-top: 20px;
     background-color: #ffffff;
@@ -34,10 +57,33 @@ body { overflow-x: hidden; background-color: #f3f1f1dc; }
     margin-left: 36px;
 
 }
+#sidebar-main img{
+    border-radius: 55px;
+    margin-left: 68px;
+}
+.content-img{
+    padding-bottom: 45px;
+    border-bottom:  2px solid #a8a8a823;
+}
+.content-btn-aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    border-bottom:  2px solid #a8a8a823;
+}
+
+.btn-aside{
+    margin-top: 25px;
+    width: 90%;
+    margin-left: 11px;
+    
+}
 
 #main-content {
-    background-color: #ffffff;
-    margin: 20px;
+    background-color: #fffefeee;
+    margin: 20px;   
     border-radius: 8px;
     height: 500px;
     padding: 30px;
@@ -49,10 +95,13 @@ body { overflow-x: hidden; background-color: #f3f1f1dc; }
 }
 
 .vacancies{
-
     width: 45%;
     height: 60vh;
     overflow-y: auto;
+    scrollbar-width: none;
+    border-right: 2px solid #a8a8a823;
+    
+    
 
 }
 .information{
@@ -71,7 +120,7 @@ body { overflow-x: hidden; background-color: #f3f1f1dc; }
     background: #fff;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 6px 12px 25px rgba(0,0,0,0.08);
+    box-shadow: 6px 20px 30px rgba(0, 0, 0, 0.13);
     border: 1px solid #bdbdbd69;
     height: 100%;
     width: 100%;
@@ -112,6 +161,7 @@ body { overflow-x: hidden; background-color: #f3f1f1dc; }
     border: 1px solid#e5e7eb;
     width: 80%;
     margin-left: 50px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.267);
     
 }
 

@@ -15,20 +15,41 @@
         <div class="row">
             <div class="col-md-3 px-0">
                 <aside id="sidebar-main" class="sidebar-custom  p-3 text-black">
-                    <h1 class="h4">Sidebar</h1>
-                    <p>Contenido</p>
+                    <div class="content-img">
+                        <img src="./../img-user/7f1675589b294e859fdf39a090cf543b_400.png" alt="" width="45%" >
+                    </div>
+                    <div class="content-btn-aside">
+                        <button class="btn-filter btn-aside">Ofertas</button>
+                    <button class="btn-filter btn-aside" >Gestion Hojas De Vida</button>
+                    </div>
+                    <div class="toggle-activity">
+                        <input type="checkbox" name="" id="toggle-activity">
+                    </div>
+                    
+
                 </aside>
             </div>
 
             <div class="col-md-9">
-                <nav id="main-navbar" class="navbar navbar-expand-lg  px-4">
-        
+                <nav id="main-navbar" class="navbar navbar-expand-lg  px-4  d-flex ">
+                    <div class="filter d-flex gap-4 ms-5">
+                        <button class="btn-filter" onclick="filter(`Javascript`)">Javascript</button>
+                        <button class="btn-filter" onclick="filter(`python`)">Python</button>
+                        <button class="btn-filter" onclick="filter(`java`)" >Java</button>
+                        <button class="btn-filter" onclick="filter(`php`)" >PHP</button>
+                        <button class="btn-filter" onclick="loadVacancies()" >All</button>
+
+                    </div>
+                    <div class="logout">
+                        <button class="btn-filter">LogOut</button>
+                    </div>
                 </nav>
                 <section id="main-content" class="mt-4">
                     <div class="container-fluid vacancies">
+
                     </div>
                     <div class="information">
-                        
+
                     </div>
                 </section>
             </div>
