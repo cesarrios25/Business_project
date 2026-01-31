@@ -1,20 +1,14 @@
-let API = ("http://localhost:4000");
+let API = "http://localhost:4000";
 
 let vacanteSeleccionada = null;
 async function loadVacancies() {
+  let data = await fetch(`${API}/vacants`);
+  let vacancies = await data.json();
 
-
-    let data = await fetch(`${API}/vacants`);
-    let vacancies = await data.json();
-
-
-
-    let containerCard = document.querySelector(".vacancies");
-    containerCard.innerHTML= "";
-   vacancies.forEach(v => {
-
-    containerCard.innerHTML += 
-    `   
+  let containerCard = document.querySelector(".vacancies");
+  containerCard.innerHTML = "";
+  vacancies.forEach((v) => {
+    containerCard.innerHTML += `   
     <div class="content-card">
         <div class="vacante-card">
             <h5>${v.vacantName}</h5>
@@ -31,21 +25,19 @@ async function loadVacancies() {
         </div>
     </div>
     `;
-});
-
+  });
 }
 
 async function showDescription(id) {
-    const res = await fetch(`${API}/vacants/${id}`)
-    const  data = await res.json();
+  const res = await fetch(`${API}/vacants/${id}`);
+  const data = await res.json();
 
-    vacanteSeleccionada = data;
+  vacanteSeleccionada = data;
 
-    let theInfomation = document.querySelector(".information");
-    theInfomation.innerHTML = "";
+  let theInfomation = document.querySelector(".information");
+  theInfomation.innerHTML = "";
 
-        theInfomation.innerHTML = 
-        `
+  theInfomation.innerHTML = `
         <div class="detalle-card shadow-sm">
 
             <div class="detalle-header">
@@ -82,14 +74,14 @@ async function showDescription(id) {
 
         </div>
 
-        `
-    }
+        `;
+}
 
 loadVacancies();
 
 document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("mostrar")) {
-        const id = e.target.dataset.id;
-        showDescription(id);
-    }
+  if (e.target.classList.contains("mostrar")) {
+    const id = e.target.dataset.id;
+    showDescription(id);
+  }
 });
