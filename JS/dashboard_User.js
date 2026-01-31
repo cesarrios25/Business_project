@@ -1,14 +1,13 @@
-
-let API = ("http://localhost:4000");
+import * as Api from "./api.js" 
+// import {sendData, getData  } from "./api.js";
 
 let vacanteSeleccionada = null;
+
 async function loadVacancies() {
 
 
-    let data = await fetch(`${API}/vacants`);
-    let vacancies = await data.json();
 
-
+    const vacancies = await Api.getData("vacants")
 
     let containerCard = document.querySelector(".vacancies");
     containerCard.innerHTML= "";
@@ -27,14 +26,15 @@ async function loadVacancies() {
                     </div>
             </div>
                 
-                    `  
+                    `
+                    
     });
 
 }
 
 async function showDescription(id) {
-    const res = await fetch(`${API}/vacants/${id}`)
-    const  data = await res.json();
+    const res = await Api.getDataById("vacants",id)
+
 
     vacanteSeleccionada = data;
 
